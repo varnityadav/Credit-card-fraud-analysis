@@ -1,25 +1,25 @@
-# Credit Card Fraud Detection using Logistic Regression
+Credit Card Fraud Detection using Logistic Regression
 
-## Overview
+Overview
 
-#This project aims to develop a machine learning model that can accurately detect fraudulent credit card transactions. Credit card fraud is a significant problem, resulting in billions of dollars in losses each year. This project explores the use of Logistic Regression to identify fraudulent transactions in a real-time setting, enabling timely intervention and minimizing financial losses.
+This project aims to develop a machine learning model that can accurately detect fraudulent credit card transactions. Credit card fraud is a significant problem, resulting in billions of dollars in losses each year. This project explores the use of Logistic Regression to identify fraudulent transactions in a real-time setting, enabling timely intervention and minimizing financial losses.
 
-## Problem Statement
+Problem Statement
 
-#Credit card fraud is a growing concern for both consumers and financial institutions. The ability to quickly and accurately identify fraudulent transactions is crucial for preventing financial losses and protecting consumers from unauthorized charges. Traditional rule-based systems for fraud detection are often limited in their ability to detect new and sophisticated fraud schemes. This project addresses this challenge by developing a machine learning model that can learn complex patterns in transaction data and identify fraudulent transactions with high accuracy.
+Credit card fraud is a growing concern for both consumers and financial institutions. The ability to quickly and accurately identify fraudulent transactions is crucial for preventing financial losses and protecting consumers from unauthorized charges. Traditional rule-based systems for fraud detection are often limited in their ability to detect new and sophisticated fraud schemes. This project addresses this challenge by developing a machine learning model that can learn complex patterns in transaction data and identify fraudulent transactions with high accuracy.
 
-## Data
+Data
 
-#The dataset used in this project is the "Credit Card Fraud Detection" dataset from Kaggle, originally created and shared by Andrea Dal Pozzolo, Olivier Caelen, Reid A. Johnson and Gianluca Bontempi. The dataset contains transactions made by credit cards in September 2013 by European cardholders. Due to confidentiality constraints, the original features have been transformed using Principal Component Analysis (PCA), resulting in 28 anonymized features (V1-V28). The dataset also includes the transaction `Time`, the `Amount`, and a `Class` label indicating whether the transaction is fraudulent (1) or not (0).
+The dataset used in this project is the "Credit Card Fraud Detection" dataset from Kaggle, originally created and shared by Andrea Dal Pozzolo, Olivier Caelen, Reid A. Johnson and Gianluca Bontempi. The dataset contains transactions made by credit cards in September 2013 by European cardholders. Due to confidentiality constraints, the original features have been transformed using Principal Component Analysis (PCA), resulting in 28 anonymized features (V1-V28). The dataset also includes the transaction `Time`, the `Amount`, and a `Class` label indicating whether the transaction is fraudulent (1) or not (0).
      
 
-##Key characteristics:
+Key characteristics:
 
-#Anonymized Features: The PCA transformation makes it difficult to interpret the individual features, but it preserves the underlying relationships in the data.
-#Class Imbalance: The dataset is highly imbalanced, with fraudulent transactions representing only a small fraction of the total number of transactions. This requires special consideration when training and evaluating the model.
+Anonymized Features: The PCA transformation makes it difficult to interpret the individual features, but it preserves the underlying relationships in the data.
+Class Imbalance: The dataset is highly imbalanced, with fraudulent transactions representing only a small fraction of the total number of transactions. This requires special consideration when training and evaluating the model.
      
 
-## Methods
+Methods
 
 This project employed the following methods:
 
@@ -39,7 +39,7 @@ This project employed the following methods:
 6.  Simulation:
     A simulation was created to mimic real-time transactions that were more likely to be fraudulent during certain times of the day.
 
-## Results
+Results
 
 The Logistic Regression model achieved the following results:
 
@@ -67,16 +67,16 @@ Precision : TP / (TP + FP) = 101 / (101 + 4) = 101 / 105 = 0.962
 Recall : TP / (TP + FN) = 101 / (101 + 9) = 101 / 110 = 0.918
      
 
-## Insights
+Insights
 
 #This project demonstrated the effectiveness of Logistic Regression for credit card fraud detection, even with anonymized features. The importance of addressing class imbalance was highlighted through the use of undersampling. The threshold tuning step further improved the model's performance by allowing us to optimize the balance between precision and recall based on the specific needs of the application. The generated time transactions also allowed more realistic simulation of fraudulent behavior.
 
-## Conclusion
+Conclusion
 
-#This project successfully developed a machine learning model that can accurately detect fraudulent credit card transactions. The model can be used to identify fraudulent transactions in real-time, enabling timely intervention and minimizing financial losses. The project also highlighted the importance of data preprocessing, model selection, and threshold tuning in achieving optimal performance.
+This project successfully developed a machine learning model that can accurately detect fraudulent credit card transactions. The model can be used to identify fraudulent transactions in real-time, enabling timely intervention and minimizing financial losses. The project also highlighted the importance of data preprocessing, model selection, and threshold tuning in achieving optimal performance.
      
 
-## Future Work
+Future Work
 
 Potential directions for future work include:
 
@@ -85,7 +85,7 @@ Real-Time Data Integration: Integrate the model with a real-time data stream fro
 Deployment: Deploy the model to a cloud platform (e.g., AWS, Azure, Google Cloud) to make it accessible to a wider audience.
 Explore other fraud methods: There are always new fraud methods appearing, and this model should be continuously trained and evaluated.
 
-## Code
+Code
 
 The code for this project is available in this repository. To run the code, you will need to have the following libraries installed:
 
@@ -97,7 +97,7 @@ The code for this project is available in this repository. To run the code, you 
 
      
 
-## Acknowledgements
+Acknowledgements
 
 I would like to thank Andrea Dal Pozzolo, Olivier Caelen, Reid A. Johnson and Gianluca Bontempi, Worldline, and the Machine Learning Group(http://mlg.ulb.ac.be)
 of ULB (Université Libre de Bruxelles) for creating and sharing the Credit Card Fraud Detection dataset on Kaggle. Their work has made this project possible.
